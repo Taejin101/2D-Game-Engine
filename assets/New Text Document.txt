@@ -1,0 +1,14 @@
+<animations>
+	<sequence id="hero_idle" framecount="10" speed="100" width="587" height="707">
+		<frame textureID = "run1"/>
+		<frame textureID = "run2"/>
+		<frame textureID = "run3"/>
+		<frame textureID = "run4"/>
+		<frame textureID = "run5"/>
+		<frame textureID = "run6"/>
+		<frame textureID = "run7"/>
+		<frame textureID = "run8"/>
+		<frame textureID = "run9"/>
+		<frame textureID = "run10"/>
+	</sequence>
+</animations>

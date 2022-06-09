@@ -1,0 +1,82 @@
+# Project: Game
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = src/engine.o src/Graphics.o src/main.o src/Hero.o src/SpriteAnimation.o src/Inputs.o src/Timer.o src/TileLayer.o src/MapParser.o src/Vendor/tinyxml/tinystr.o src/Vendor/tinyxml/tinyxml.o src/Vendor/tinyxml/tinyxmlerror.o src/Vendor/tinyxml/tinyxmlparser.o src/Camera.o src/CollisionHandler.o src/SeqAnimation.o src/Enemy.o src/ObjectFactory.o src/ImgLayer.o
+LINKOBJ  = src/engine.o src/Graphics.o src/main.o src/Hero.o src/SpriteAnimation.o src/Inputs.o src/Timer.o src/TileLayer.o src/MapParser.o src/Vendor/tinyxml/tinystr.o src/Vendor/tinyxml/tinyxml.o src/Vendor/tinyxml/tinyxmlerror.o src/Vendor/tinyxml/tinyxmlparser.o src/Camera.o src/CollisionHandler.o src/SeqAnimation.o src/Enemy.o src/ObjectFactory.o src/ImgLayer.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/SDL2-2.0.16/x86_64-w64-mingw32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/SDL2_image-2.0.5/x86_64-w64-mingw32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/SDL2_mixer-2.0.4/x86_64-w64-mingw32/lib" -L"C:/Users/DELL/Desktop/RPG game/src/Vendor/tinyxml" -L"C:/Users/DELL/Desktop/RPG game/src" -static-libgcc -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/SDL2/include" -I"C:/Users/DELL/Desktop/RPG game/src/Vendor/tinyxml" -I"C:/Users/DELL/Desktop/RPG game/src"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/Users/DELL/Desktop/RPG game/src/Vendor/tinyxml" -I"C:/Users/DELL/Desktop/RPG game/src"
+BIN      = Game.exe
+CXXFLAGS = $(CXXINCS) -std=c++11 -std=c++0x
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+src/engine.o: src/engine.cpp
+	$(CPP) -c src/engine.cpp -o src/engine.o $(CXXFLAGS)
+
+src/Graphics.o: src/Graphics.cpp
+	$(CPP) -c src/Graphics.cpp -o src/Graphics.o $(CXXFLAGS)
+
+src/main.o: src/main.cpp
+	$(CPP) -c src/main.cpp -o src/main.o $(CXXFLAGS)
+
+src/Hero.o: src/Hero.cpp
+	$(CPP) -c src/Hero.cpp -o src/Hero.o $(CXXFLAGS)
+
+src/SpriteAnimation.o: src/SpriteAnimation.cpp
+	$(CPP) -c src/SpriteAnimation.cpp -o src/SpriteAnimation.o $(CXXFLAGS)
+
+src/Inputs.o: src/Inputs.cpp
+	$(CPP) -c src/Inputs.cpp -o src/Inputs.o $(CXXFLAGS)
+
+src/Timer.o: src/Timer.cpp
+	$(CPP) -c src/Timer.cpp -o src/Timer.o $(CXXFLAGS)
+
+src/TileLayer.o: src/TileLayer.cpp
+	$(CPP) -c src/TileLayer.cpp -o src/TileLayer.o $(CXXFLAGS)
+
+src/MapParser.o: src/MapParser.cpp
+	$(CPP) -c src/MapParser.cpp -o src/MapParser.o $(CXXFLAGS)
+
+src/Vendor/tinyxml/tinystr.o: src/Vendor/tinyxml/tinystr.cpp
+	$(CPP) -c src/Vendor/tinyxml/tinystr.cpp -o src/Vendor/tinyxml/tinystr.o $(CXXFLAGS)
+
+src/Vendor/tinyxml/tinyxml.o: src/Vendor/tinyxml/tinyxml.cpp
+	$(CPP) -c src/Vendor/tinyxml/tinyxml.cpp -o src/Vendor/tinyxml/tinyxml.o $(CXXFLAGS)
+
+src/Vendor/tinyxml/tinyxmlerror.o: src/Vendor/tinyxml/tinyxmlerror.cpp
+	$(CPP) -c src/Vendor/tinyxml/tinyxmlerror.cpp -o src/Vendor/tinyxml/tinyxmlerror.o $(CXXFLAGS)
+
+src/Vendor/tinyxml/tinyxmlparser.o: src/Vendor/tinyxml/tinyxmlparser.cpp
+	$(CPP) -c src/Vendor/tinyxml/tinyxmlparser.cpp -o src/Vendor/tinyxml/tinyxmlparser.o $(CXXFLAGS)
+
+src/Camera.o: src/Camera.cpp
+	$(CPP) -c src/Camera.cpp -o src/Camera.o $(CXXFLAGS)
+
+src/CollisionHandler.o: src/CollisionHandler.cpp
+	$(CPP) -c src/CollisionHandler.cpp -o src/CollisionHandler.o $(CXXFLAGS)
+
+src/SeqAnimation.o: src/SeqAnimation.cpp
+	$(CPP) -c src/SeqAnimation.cpp -o src/SeqAnimation.o $(CXXFLAGS)
+
+src/Enemy.o: src/Enemy.cpp
+	$(CPP) -c src/Enemy.cpp -o src/Enemy.o $(CXXFLAGS)
+
+src/ObjectFactory.o: src/ObjectFactory.cpp
+	$(CPP) -c src/ObjectFactory.cpp -o src/ObjectFactory.o $(CXXFLAGS)
+
+src/ImgLayer.o: src/ImgLayer.cpp
+	$(CPP) -c src/ImgLayer.cpp -o src/ImgLayer.o $(CXXFLAGS)

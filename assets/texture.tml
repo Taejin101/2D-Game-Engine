@@ -1,0 +1,47 @@
+<textures>
+	<texture id="bg" source="assets/Background/bg.png"/>
+
+	<texture id="player_idle1" source="assets/hero/idle/idle1.png"/>
+	<texture id="player_idle2" source="assets/hero/idle/idle2.png"/>
+	<texture id="player_idle3" source="assets/hero/idle/idle3.png"/>
+	<texture id="player_idle4" source="assets/hero/idle/idle4.png"/>
+	<texture id="player_idle5" source="assets/hero/idle/idle5.png"/>
+	<texture id="player_idle6" source="assets/hero/idle/idle6.png"/>
+	<texture id="player_idle7" source="assets/hero/idle/idle7.png"/>
+	<texture id="player_idle8" source="assets/hero/idle/idle8.png"/>
+	<texture id="player_idle9" source="assets/hero/idle/idle9.png"/>
+	<texture id="player_idle10" source="assets/hero/idle/idle10.png"/>
+
+	<texture id="player_run1" source="assets/hero/run/run1.png"/>
+	<texture id="player_run2" source="assets/hero/run/run2.png"/>
+	<texture id="player_run3" source="assets/hero/run/run3.png"/>
+	<texture id="player_run4" source="assets/hero/run/run4.png"/>
+	<texture id="player_run5" source="assets/hero/run/run5.png"/>
+	<texture id="player_run6" source="assets/hero/run/run6.png"/>
+	<texture id="player_run7" source="assets/hero/run/run7.png"/>
+	<texture id="player_run8" source="assets/hero/run/run8.png"/>
+	<texture id="player_run9" source="assets/hero/run/run9.png"/>
+	<texture id="player_run10" source="assets/hero/run/run10.png"/>
+
+	<texture id="player_attack1" source="assets/hero/attack/attack1.png"/>
+	<texture id="player_attack2" source="assets/hero/attack/attack2.png"/>
+	<texture id="player_attack3" source="assets/hero/attack/attack3.png"/>
+	<texture id="player_attack4" source="assets/hero/attack/attack4.png"/>
+	<texture id="player_attack5" source="assets/hero/attack/attack5.png"/>
+	<texture id="player_attack6" source="assets/hero/attack/attack6.png"/>
+	<texture id="player_attack7" source="assets/hero/attack/attack7.png"/>
+	<texture id="player_attack8" source="assets/hero/attack/attack8.png"/>
+	<texture id="player_attack9" source="assets/hero/attack/attack9.png"/>
+
+	<texture id="player_jump1" source="assets/hero/jump/jump1.png"/>
+	<texture id="player_jump2" source="assets/hero/jump/jump2.png"/>
+	<texture id="player_jump3" source="assets/hero/jump/jump3.png"/>
+	<texture id="player_jump4" source="assets/hero/jump/jump4.png"/>
+	<texture id="player_jump5" source="assets/hero/jump/jump5.png"/>
+	<texture id="player_jump6" source="assets/hero/jump/jump6.png"/>
+	<texture id="player_jump7" source="assets/hero/jump/jump7.png"/>
+	<texture id="player_jump8" source="assets/hero/jump/jump8.png"/>
+	<texture id="player_jump9" source="assets/hero/jump/jump9.png"/>
+	<texture id="player_jump10" source="assets/hero/jump/jump10.png"/>
+
+</textures>

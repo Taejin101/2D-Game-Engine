@@ -1,0 +1,52 @@
+<animations>
+	<sequence id="hero_idle" framecount="10" speed="100" width="126" height="137">
+		<frame textureID = "player_idle1"/>
+		<frame textureID = "player_idle2"/>
+		<frame textureID = "player_idle3"/>
+		<frame textureID = "player_idle4"/>
+		<frame textureID = "player_idle5"/>
+		<frame textureID = "player_idle6"/>
+		<frame textureID = "player_idle7"/>
+		<frame textureID = "player_idle8"/>
+		<frame textureID = "player_idle9"/>
+		<frame textureID = "player_idle10"/>
+	</sequence>
+
+	<sequence id="hero_attack" framecount="9" speed="60" width="126" height="137">
+		<frame textureID = "player_attack1"/>
+		<frame textureID = "player_attack2"/>
+		<frame textureID = "player_attack3"/>
+		<frame textureID = "player_attack4"/>
+		<frame textureID = "player_attack5"/>
+		<frame textureID = "player_attack6"/>
+		<frame textureID = "player_attack7"/>
+		<frame textureID = "player_attack8"/>
+		<frame textureID = "player_attack9"/>
+	</sequence>
+
+	<sequence id="hero_run" framecount="10" speed="100" width="126" height="137">
+		<frame textureID = "player_run1"/>
+		<frame textureID = "player_run2"/>
+		<frame textureID = "player_run3"/>
+		<frame textureID = "player_run4"/>
+		<frame textureID = "player_run5"/>
+		<frame textureID = "player_run6"/>
+		<frame textureID = "player_run7"/>
+		<frame textureID = "player_run8"/>
+		<frame textureID = "player_run9"/>
+		<frame textureID = "player_run10"/>
+	</sequence>
+
+	<sequence id="hero_jump" framecount="10" speed="100" width="126" height="137">
+		<frame textureID = "player_jump1"/>
+		<frame textureID = "player_jump2"/>
+		<frame textureID = "player_jump3"/>
+		<frame textureID = "player_jump4"/>
+		<frame textureID = "player_jump5"/>
+		<frame textureID = "player_jump6"/>
+		<frame textureID = "player_jump7"/>
+		<frame textureID = "player_jump8"/>
+		<frame textureID = "player_jump9"/>
+		<frame textureID = "player_jump10"/>
+	</sequence>
+</animations>
